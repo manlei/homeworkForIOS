@@ -28,7 +28,7 @@ router.get('/', function(req, res, next) {
 					console.log('start:'+start);
 					var temp = new Array();
 					var count = 0;
-					var min = (dishes.length-start -1 > 10) ? 10 : dishes.length-1-start;
+					var min = (dishes.length-start > 10) ? 10 : dishes.length-start;
 					var end = start + min;  
 					for (var i = start; i < end; i++) {
 						temp[count] = dishes[i];
