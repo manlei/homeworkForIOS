@@ -23,7 +23,9 @@ router.get('/', function(req, res, next) {
 				else {
 					console.log('random');
 					//random start
-					var start = Math.ceil(Math.random()*(dishes.length*(0.75)));
+					var start = Math.round(Math.random()*(dishes.length-1));
+					start = start >= 0 ? start : 0;
+					console.log('start:'+start);
 					var temp = new Array();
 					var count = 0;
 					var min = (dishes.length-start -1 > 10) ? 10 : dishes.length-1-start;
@@ -51,11 +53,12 @@ router.get('/', function(req, res, next) {
 					console.log('kind:'+req.query.parameter);
 					console.log(dishes);
 
-					var start = Math.ceil(Math.random()*(dishes.length*(0.5)));
-					console.log(start);
+					var start = Math.round(Math.random()*(dishes.length-1));
+					start = start >= 0 ? start : 0;
+					console.log('start:'+start);
 					var temp = new Array();
 					var count = 0;
-					var min = (dishes.length-start -1 > 10) ? 10 : dishes.length-1-start;
+					var min = (dishes.length-start > 10) ? 10 : dishes.length-start;
 					var end = start + min;  
 					for (var i = start; i < end; i++) {
 						temp[count] = dishes[i];

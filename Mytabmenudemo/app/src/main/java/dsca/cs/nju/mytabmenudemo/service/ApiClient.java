@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "http://115.159.209.180:3000/";
+    private static final String BASE_URL = "http://114.212.135.64:3000/";
 
     private static final String BASE_image_URL = BASE_URL+"image/?parameter=";
 

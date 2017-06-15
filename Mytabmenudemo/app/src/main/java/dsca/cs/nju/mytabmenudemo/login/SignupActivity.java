@@ -1,7 +1,6 @@
 package dsca.cs.nju.mytabmenudemo.login;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -78,8 +77,8 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Finish the registration screen and return to the Login activity
-                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                //startActivity(intent);
                 finish();
             }
         });
@@ -137,8 +136,9 @@ public class SignupActivity extends AppCompatActivity {
     public void onSignupSuccess() {
         signupButton.setEnabled(true);
         setResult(RESULT_OK, null);
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, LoginActivity.class);
+        //startActivity(intent);
+        finish();
     }
 
     public void onSignupFailed() {
@@ -151,7 +151,15 @@ public class SignupActivity extends AppCompatActivity {
         boolean valid = true;
 
         String email = emailText.getText().toString();
-        int inputVertificationCodeNum = Integer.parseInt(this.vertificationCode.getText().toString());
+
+        int inputVertificationCodeNum;
+        try {
+            inputVertificationCodeNum = Integer.parseInt(this.vertificationCode.getText().toString());
+        }
+        catch (Exception e) {
+            return false;
+        }
+
         String password = passwordText.getText().toString();
         String reEnterPassword = reEnterPasswordText.getText().toString();
 

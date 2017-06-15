@@ -1,6 +1,5 @@
 package dsca.cs.nju.mytabmenudemo.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -25,7 +24,6 @@ import java.util.List;
 import dsca.cs.nju.mytabmenudemo.R;
 import dsca.cs.nju.mytabmenudemo.classification.ClassificationFragment;
 import dsca.cs.nju.mytabmenudemo.home.HomeFragment;
-import dsca.cs.nju.mytabmenudemo.login.LoginActivity;
 import dsca.cs.nju.mytabmenudemo.notification.NotificationFragment;
 import dsca.cs.nju.mytabmenudemo.util.AppContext;
 
@@ -63,18 +61,19 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         initview();
         initpage();
 
-        //启动登录界面,在初始化控件之后
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivityForResult(intent,0);
-
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.e("Mainactivity","返回"+AppContext.getOnlineUser().getAccount());
         userAccount.setText(AppContext.getOnlineUser().getAccount());
+        //启动登录界面,在初始化控件之后
+        //Intent intent = new Intent(this, LoginActivity.class);
+        //startActivityForResult(intent,0);
+
     }
+
+
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        Log.e("Mainactivity","返回"+AppContext.getOnlineUser().getAccount());
+//        userAccount.setText(AppContext.getOnlineUser().getAccount());
+//    }
 
 
     public boolean onOptionsItemSelected(MenuItem item){

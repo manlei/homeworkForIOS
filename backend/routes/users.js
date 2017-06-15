@@ -27,6 +27,9 @@ router.get('/', function(req, res, next) {
 
 router.post('/',function(req, res, next){
 	console.log('post photo here! ********');
+	console.log(req);
+	console.log('post photo here! ********');
+
 	//console.log(req.body);
 	console.log(req.url);
 	console.log(req.files.photo);

@@ -30,7 +30,7 @@ router.post('/', function(req,res,next) {
 				return res.status(400).json(req.body);
 			}
 			else {
-				if (user.length != 0) {
+				if (user != null) {
 					console.log('result of login:'+user);
 					return res.status(200).json(user);
 				}
