@@ -20,6 +20,7 @@ import dsca.cs.nju.mytabmenudemo.R;
 
 public class ClassificationFragment extends Fragment {
 
+    //菜系
     private Cuisine[] cuisines={
 
             new Cuisine("breakfast",R.drawable.breakfast),

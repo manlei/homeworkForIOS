@@ -42,16 +42,6 @@ public class AppContext extends Application {
             return true;
         }
     }
-//
-//    /**
-//     * 注销用户
-//     *
-//     * @return 成功注销返回 true
-//     */
-//    public static boolean signOut() {
-//        onlineUser = null;
-//        return true;
-//    }
 
     /**
      * 获得当前登陆的用户
@@ -62,53 +52,5 @@ public class AppContext extends Application {
         return onlineUser;
     }
 
-//    /**
-//     * 重新获取用户信息
-//     *
-//     * @return 更新是否成功
-//     */
-//    public static boolean updateOnlineUser() {
-//        UsersService usersService = ApiClient.getUsersService();
-//        usersService.fetchOne(onlineUser.getId()).enqueue(new Callback<User>() {
-//            @Override
-//            public void onResponse(Call<User> call, Response<User> response) {
-//                switch (response.code()) {
-//                    case 200: {
-//                        User u = response.body();
-//                        u.setPassword(onlineUser.getPassword());
-//                        onlineUser = u;
-//                        onlineUserUpdated = true;
-//                    } break;
-//
-//                    default: {
-//                        onlineUserUpdated = false;
-//                    } break;
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<User> call, Throwable t) {
-//                onlineUserUpdated = false;
-//            }
-//        });
-//        return true;
-//    }
-//
-//    /**
-//     * 查看用户信息是否更新
-//     *
-//     * @return 是否更新
-//     */
-//    public static boolean isOnlineUserUpdated() {
-//        return onlineUserUpdated;
-//    }
-//
-//    /**
-//     * 清空更新信息
-//     *
-//     */
-//    public static void clearOnlineUserUpdated() {
-//        onlineUserUpdated = false;
-//    }
 
 }

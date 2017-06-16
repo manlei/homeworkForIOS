@@ -24,8 +24,6 @@ public interface UserService {
     @POST("user")
     Call<User> signIn(@Body User user);
 
-    //@POST("dishes")
-    //Call<Dish> addDish(@Body Dish dish);
 
     @GET("dishes")
     Call<List<Dish>> getRandomDishList(@Query("parameter") String parameter);

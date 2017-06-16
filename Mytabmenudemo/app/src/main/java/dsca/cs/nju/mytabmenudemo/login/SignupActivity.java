@@ -133,6 +133,9 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * 成功
+     */
     public void onSignupSuccess() {
         signupButton.setEnabled(true);
         setResult(RESULT_OK, null);
@@ -141,12 +144,19 @@ public class SignupActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * 失败
+     */
     public void onSignupFailed() {
         Toast.makeText(getBaseContext(), "注册失败", Toast.LENGTH_LONG).show();
 
         signupButton.setEnabled(true);
     }
 
+    /**
+     * 检查是否有效
+     * @return
+     */
     public boolean validate() {
         boolean valid = true;
 

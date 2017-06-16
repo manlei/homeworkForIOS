@@ -80,6 +80,9 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * 登录
+     */
     public void login() {
         Log.d(TAG, "Login");
 

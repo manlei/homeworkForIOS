@@ -62,20 +62,15 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         initpage();
 
         userAccount.setText(AppContext.getOnlineUser().getAccount());
-        //启动登录界面,在初始化控件之后
-        //Intent intent = new Intent(this, LoginActivity.class);
-        //startActivityForResult(intent,0);
 
     }
 
 
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        Log.e("Mainactivity","返回"+AppContext.getOnlineUser().getAccount());
-//        userAccount.setText(AppContext.getOnlineUser().getAccount());
-//    }
-
-
+    /**
+     * 初始化菜单
+     * @param item
+     * @return
+     */
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case android.R.id.home:

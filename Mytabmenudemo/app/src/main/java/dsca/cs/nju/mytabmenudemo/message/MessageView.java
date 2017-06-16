@@ -33,6 +33,11 @@ public class MessageView extends AppCompatActivity {
         content.setText(notification.getContent());
     }
 
+    /**
+     *
+     * @param context
+     * @param notification
+     */
     public static void startActivityWithParameter(Context context,Notification notification) {
         Intent intent = new Intent(context,MessageView.class);
         intent.putExtra(TAG,notification);
