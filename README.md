@@ -12,12 +12,15 @@
   
 ## HOW TO USE THE APP
 + register
+
 ![register](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E6%B3%A8%E5%86%8C.png)
 
 + login
+
 ![login](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E7%99%BB%E5%BD%95.png)
 
 + main interface
+
 ![main interface](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E4%B8%BB%E7%95%8C%E9%9D%A2.png)
 
 + post a dish
