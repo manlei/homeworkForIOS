@@ -24,19 +24,25 @@
 ![main interface](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E4%B8%BB%E7%95%8C%E9%9D%A2.png)
 
 + post a dish
+
 ![post a dish](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E5%8F%91%E5%B8%96.png)
 
 + personal info
+
 ![personal info](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png)
 
 + classification
+
 ![classification](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E5%88%86%E7%B1%BB%E5%88%97%E8%A1%A8.png)
 
 + choose taiwan
+
 ![taiwan](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E5%8F%B0%E6%B9%BE.png)
 
 + news
+
 ![news](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E4%B8%AA%E4%BA%BA%E6%B6%88%E6%81%AF.png)
 
 + look one item
+
 ![look one item](https://github.com/manlei/homeworkForIOS/blob/master/%E5%9B%BE%E7%89%87%E8%AF%B4%E6%98%8E/%E8%8F%9C%E8%82%B4.png)
