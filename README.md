@@ -8,8 +8,8 @@
   + there are java jdk with version more 1.8 in your machine. 
   + you should have android studio with SDK of version 25.
   + you should download the file of Mytabmenudemo and run it in your machine.
-  + if you have question about this process,please contact with me immediately.
-  
++ **if you have question about this process,please contact with me immediately.**
+
 ## HOW TO USE THE APP
 + register
 
